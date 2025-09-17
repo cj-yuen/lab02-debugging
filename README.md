@@ -18,7 +18,7 @@ Extra credit if you can find all FIVE bugs.
 4) In march(), to fix the floor not extending out as far as we want, change the value that i goes till. I replaced 'i < 64' with 'i < 200'. This also gets rid of the weird warping around the spheres.
 5) 
 
-Partner: Marcus \n
+Partner: Marcus <br>
 Shadertoy: https://www.shadertoy.com/view/wcsfWf
 
 # Submission
