@@ -11,6 +11,15 @@ It don't do that. Correct THREE of the FIVE bugs that are messing up the output.
 
 Extra credit if you can find all FIVE bugs.
 
+# Debugs
+1) In mainImage() we never call uv2 so I just replaced 'vec uv2 = ...' with 'uv = ...' to fix the black screen.
+2) In raycast(), we horizontal scale is messed up as it was 'iResolution.x / iResolution.x' which I fixed with 'iResolution.x / iResolution.y' which is the correct horizontal screen ratio.
+3) In sdf3d(), to apply specular, we need to replace 'dir = reflect(eye, nor);' with 'dir = reflect(dir, nor);'.
+4) In march(), to fix the floor not extending out as far as we want, change the value that i goes till. I replaced 'i < 64' with 'i < 200'. This also gets rid of the weird warping around the spheres.
+5) 
+
+Shadertoy: https://www.shadertoy.com/view/wcsfWf
+
 # Submission
 - Create a pull request to this repository
 - In the README, include the names of both your team members
